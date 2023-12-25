@@ -7,7 +7,7 @@ function App() {
     <div className="card">
       <Form />
       <Main />
-      <Forecast />
+      {/* <Forecast /> */}
     </div>
   );
 }

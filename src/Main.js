@@ -6,17 +6,17 @@ export default function Main() {
         <img src="" alt="icon" id="icon" />
         <span className="temp" id="temp"></span>
         <span className="degree">
-          <a href="#" id="celsius">
+          <a href="/" id="celsius">
             °C
           </a>{" "}
           |
-          <a href="#" id="fahrenheit">
+          <a href="/" id="fahrenheit">
             °F
           </a>
         </span>
       </h2>
-      <h3 id="date"></h3>
-      <h4 id="description"></h4>
+      <h3 id="date" />
+      <h4 id="description" />
       <p>
         <span className="elements">
           Feels like:
