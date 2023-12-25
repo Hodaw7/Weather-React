@@ -15,8 +15,8 @@ export default function Main() {
           </a>
         </span>
       </h2>
-      <h3 id="date" />
-      <h4 id="description" />
+      <h3 id="date" aria-hidden="true"></h3>
+      <h4 id="description" aria-hidden="true"></h4>
       <p>
         <span className="elements">
           Feels like:
