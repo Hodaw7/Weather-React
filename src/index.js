@@ -13,7 +13,7 @@ root.render(
         This project was codded by{" "}
         <a href="mailto:hodabarekati0@gmail.com">Hoda Barekati</a> and is{" "}
         <a
-          href="https://github.com/Hodaw7/Weather-app"
+          href="https://github.com/Hodaw7/Weather-React"
           target="_blank"
           rel="noreferrer"
         >
