@@ -7,6 +7,7 @@ export default function Form() {
         placeholder="Enter city"
         id="search-city"
         autocomplete="off"
+        autoFocus="on"
       />
       <button type="submit" className="btn btn-primary">
         Search
