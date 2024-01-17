@@ -1,11 +1,9 @@
-import Form from "./Form";
-import Main from "./Main";
+import Search from "./Search";
 
 function App() {
   return (
     <div className="card">
-      <Form />
-      <Main />
+      <Search />
     </div>
   );
 }
