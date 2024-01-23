@@ -12,7 +12,7 @@ export default function Main(props) {
           <img src={icon} alt="icon" />
           <span className="temp">{Math.round(props.apiData.main.temp)}</span>
           <span className="degree">
-            <a href="/">°C</a> |<a href="/">°F</a>
+            <a href="/"> °C</a> |<a href="/">°F</a>
           </span>
         </h2>
         <h3>

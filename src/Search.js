@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import Main from "./Main";
 
-export default function Search() {
-  const [city, setCity] = useState(null);
+export default function Search(props) {
+  const [city, setCity] = useState(props.defaultCity);
   const [data, setData] = useState(null);
 
   function handleSubmit(event) {

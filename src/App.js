@@ -3,7 +3,7 @@ import Search from "./Search";
 function App() {
   return (
     <div className="card">
-      <Search />
+      <Search defaultCity="Tehran" />
     </div>
   );
 }
