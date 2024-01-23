@@ -1,8 +1,10 @@
 import { ThreeDots } from "react-loader-spinner";
+import FormattedDate from "./FormattedDate";
 
 export default function Main(props) {
   if (props.apiData) {
     let icon = `http://openweathermap.org/img/wn/${props.apiData.weather[0].icon}@2x.png`;
+    let timeStamp = props.apiData.dt * 1000;
     return (
       <div className="main">
         <h1>{props.apiData.name}</h1>
@@ -13,7 +15,9 @@ export default function Main(props) {
             <a href="/">°C</a> |<a href="/">°F</a>
           </span>
         </h2>
-        <h3>Wednesday 13:59</h3>
+        <h3>
+          <FormattedDate unix={timeStamp} />
+        </h3>
         <h4>{props.apiData.weather[0].description}</h4>
         <p>
           <span className="elements">
