@@ -1,5 +1,6 @@
 import { ThreeDots } from "react-loader-spinner";
 import FormattedDate from "./FormattedDate";
+import Temperature from "./Temperature";
 
 export default function Main(props) {
   if (props.apiData) {
@@ -8,13 +9,10 @@ export default function Main(props) {
     return (
       <div className="main">
         <h1>{props.apiData.name}</h1>
-        <h2>
-          <img src={icon} alt="icon" />
-          <span className="temp">{Math.round(props.apiData.main.temp)}</span>
-          <span className="degree">
-            <a href="/"> °C</a> |<a href="/">°F</a>
-          </span>
-        </h2>
+        <img src={icon} alt="icon" />
+        <span>
+          <Temperature celsius={props.apiData.main.temp} />
+        </span>
         <h3>
           <FormattedDate unix={timeStamp} />
         </h3>
