@@ -1,6 +1,7 @@
 import { ThreeDots } from "react-loader-spinner";
 import FormattedDate from "./FormattedDate";
 import Temperature from "./Temperature";
+import Forecast from "./Forecast";
 
 export default function Main(props) {
   if (props.apiData) {
@@ -38,6 +39,7 @@ export default function Main(props) {
             km/h
           </span>
         </p>
+        <Forecast coordinates={props.apiData.coord} />
       </div>
     );
   } else {
