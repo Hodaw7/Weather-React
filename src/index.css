@@ -69,16 +69,11 @@ form {
 }
 
 .temp {
-  font-size: 37px;
+  font-size: 35px;
 }
 
 .degree {
-  font-size: 25px;
-}
-
-.active {
-  color: #212529;
-  cursor: auto;
+  font-size: 23px;
 }
 
 .elements {
@@ -86,13 +81,11 @@ form {
 }
 
 .forecast {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  margin: 0px;
 }
 
 .forecast-days {
-  padding: 10px 20px;
+  padding: 25px 0;
 }
 
 .forecast-days img {
